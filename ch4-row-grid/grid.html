@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- Bootstrap CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous" />
+
+		<title>Ch4 - Rows, Columns, Grids</title>
+
+		<style>
+			.bord {
+				border: 1.5px solid black;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<h1>Ch4 - Rows, Columns, Grids</h1>
+
+			<p>
+				Rows in bootstrap are same as rows in Excel sheet. The only difference
+				is that Row create 12 different columns to form a grid in Bootstrap 5.
+				Rows will only work inside a container class.
+			</p>
+
+			<h2>Example-</h2>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col bord">12</div>
+					<div class="col bord">12</div>
+					<div class="col bord">12</div>
+					<div class="col bord">12</div>
+					<div class="col bord">12</div>
+					<div class="col bord">12</div>
+					<div class="col bord">12</div>
+					<div class="col bord">12</div>
+					<div class="col bord">12</div>
+					<div class="col bord">12</div>
+					<div class="col bord">12</div>
+					<div class="col bord">12</div>
+					<div class="col bord">12</div>
+				</div>
+			</div>
+
+			<p>
+				This is what row does. it divides the entire screen into 12 individual
+				columns.
+			</p>
+
+			<p>
+				And a single column has this much width shown above. <br />
+				It if do not add row. You will see that the row is not formed and all
+				columns are aligned below each other.
+			</p>
+
+			<!-- Bootstrap Javascript -->
+			<script
+				src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+				integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+				crossorigin="anonymous"></script>
+		</div>
+	</body>
+</html>
