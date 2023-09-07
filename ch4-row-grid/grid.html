@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- Bootstrap CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous" />
+
+		<title>Ch4 - Rows, Columns, Grids</title>
+
+		<style>
+			.bord {
+				border: 1.5px solid black;
+			}
+			.bord2 {
+				border: 2.3px solid black;
+				background: red;
+				color: #fff;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<h1>Ch4 - Rows, Columns, Grids</h1>
+
+			<p>
+				Rows in bootstrap are same as rows in Excel sheet. The only difference
+				is that Row create 12 different columns to form a grid in Bootstrap 5.
+				Rows will only work inside a container class.
+			</p>
+
+			<h2>Example-</h2>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col bord">12</div>
+					<div class="col bord">12</div>
+					<div class="col bord">12</div>
+					<div class="col bord">12</div>
+					<div class="col bord">12</div>
+					<div class="col bord">12</div>
+					<div class="col bord">12</div>
+					<div class="col bord">12</div>
+					<div class="col bord">12</div>
+					<div class="col bord">12</div>
+					<div class="col bord">12</div>
+					<div class="col bord">12</div>
+				</div>
+			</div>
+
+			<p>
+				This is what row does. it divides the entire screen into 12 individual
+				columns.
+			</p>
+
+			<p>
+				And a single column has this much width shown above. <br />
+				It if do not add row. You will see that the row is not formed and all
+				columns are aligned below each other.
+			</p>
+
+			<br />
+			<br />
+			<br />
+
+			<h3>To test 24 cols together placed in same row container -</h3>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col bord">12</div>
+					<div class="col bord">12</div>
+					<div class="col bord">12</div>
+					<div class="col bord">12</div>
+					<div class="col bord">12</div>
+					<div class="col bord">12</div>
+					<div class="col bord">12</div>
+					<div class="col bord">12</div>
+					<div class="col bord">12</div>
+					<div class="col bord">12</div>
+					<div class="col bord">12</div>
+					<div class="col bord">12</div>
+					<div class="col bord">12</div>
+					<div class="col bord">12</div>
+					<div class="col bord">12</div>
+					<div class="col bord">12</div>
+					<div class="col bord">12</div>
+					<div class="col bord">12</div>
+					<div class="col bord">12</div>
+					<div class="col bord">12</div>
+					<div class="col bord">12</div>
+					<div class="col bord">12</div>
+					<div class="col bord">12</div>
+					<div class="col bord">12</div>
+				</div>
+				<p>
+					The expectation is that that new 12 colums wil shift down and create
+					12 cols but it did not.
+				</p>
+			</div>
+
+			<br />
+			<br />
+			<br />
+
+			<h3>Adding only 5 columns -</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col bord">12</div>
+					<div class="col bord">12</div>
+					<div class="col bord">12</div>
+					<div class="col bord">12</div>
+					<div class="col bord">12</div>
+					<!-- <div class="col bord">12</div>
+					<div class="col bord">12</div>
+					<div class="col bord">12</div>
+					<div class="col bord">12</div>
+					<div class="col bord">12</div>
+					<div class="col bord">12</div>
+					 <div class="col bord">12</div> -->
+				</div>
+				<p>
+					For numbers which are not divisible by 12 like 5,7,9,11, bootstrap
+					uses auto col layout shown above.
+				</p>
+			</div>
+
+			<br />
+			<br />
+
+			<h3>Testing col2, col4, col3, col1, col2 classes -</h3>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-2 bord">12</div>
+					<div class="col-4 bord">12</div>
+					<div class="col-3 bord">12</div>
+					<div class="col-1 bord">12</div>
+					<div class="col-2 bord">12</div>
+				</div>
+				<p>
+					For numbers which are not divisible by 12 like 5,7,9,11, bootstrap
+					uses auto col layout shown above.
+				</p>
+			</div>
+
+			<br />
+			<br />
+
+			<h3>Testing col2, col4, col3, col2 classes -</h3>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-2 bord">12</div>
+					<div class="col-4 bord">12</div>
+					<div class="col-3 bord">12</div>
+					<div class="col-2 bord">12</div>
+				</div>
+				<p>
+					For numbers which are not divisible by 12 like 5,7,9,11, bootstrap
+					uses auto col layout shown above.
+				</p>
+			</div>
+
+			<br />
+			<br />
+
+			<h3>Testing col2, col4, col3, col2 classes with container class -</h3>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-2 bord">12</div>
+					<div class="col-4 bord">12</div>
+					<div class="col-3 bord">12</div>
+					<div class="col-2 bord">12</div>
+				</div>
+				<p>
+					For numbers which are not divisible by 12 like 5,7,9,11, bootstrap
+					uses auto col layout shown above.
+				</p>
+			</div>
+
+			<br />
+			<br />
+
+			<h2>Practical implementation of Col classes -</h2>
+			<br />
+			<h3>Class col-lg-3 implmentation-</h3>
+
+			<div class="container-lg">
+				<div class="row">
+					<div class="col-lg-3 bord2">RED</div>
+					<div class="col-lg-3 bord2">RED2</div>
+					<div class="col-lg-3 bord2">RED3</div>
+					<div class="col-lg-3 bord2">RED4</div>
+				</div>
+			</div>
+
+			<p>
+				The above example demostrates that the design was made for desktop since
+				we used "lg" here. Now, In responsive behavious, It will pul all the
+				items in horizontal manner (One below the other format).
+			</p>
+
+			<h3>Class col-lg-3 with col-md-6 implmentation-</h3>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-6 bord2">RED</div>
+					<div class="col-lg-3 col-md-6 bord2">RED2</div>
+					<div class="col-lg-3 col-md-6 bord2">RED3</div>
+					<div class="col-lg-3 col-md-6 bord2">RED4</div>
+				</div>
+			</div>
+			<p>
+				The above example demostrates that the design was made for desktop since
+				we used "lg" here. Noq, In responsive behavious, It will pul all the
+				items in horizontal manner (One below the other format) but we want the
+				items to be like 2 card in one line and rest 2 cards placed horizontally
+				so, we used col-md-6 to make this layout happen.
+			</p>
+
+			<h1>
+				NOTE: You cannot decalre another column class in parent column. You need
+				to declare ROW class then go with declaring column class
+			</h1>
+
+			<p>col-auto class takes up space according to content</p>
+
+			<br />
+			<br />
+			<br />
+
+			<h2>To define how many columns show be there in a row -</h2>
+
+			<div class="container-fluid">
+				<div class="row row-cols-2">
+					<!-- row-col-4 defined that there will be 4 columns in a row and npt more than that-->
+					<div class="col bg-danger text-white">red</div>
+					<div class="col bg-primary text-white">blue</div>
+					<div class="col bg-success text-white">green</div>
+					<div class="col bg-warning">yellow</div>
+					<div class="col bg-danger text-white">red</div>
+					<div class="col bg-primary text-white">blue</div>
+					<div class="col bg-success text-white">green</div>
+					<div class="col bg-warning">yellow</div>
+				</div>
+			</div>
+
+			<!-- Bootstrap Javascript -->
+			<script
+				src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+				integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+				crossorigin="anonymous"></script>
+		</div>
+	</body>
+</html>
